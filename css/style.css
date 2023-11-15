@@ -1,0 +1,453 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Zen+Maru+Gothic:wght@500&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: white;
+  font-family: "kaisei-tokumin", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+.wrapper_all {
+  overflow: hidden;
+}
+header{
+  padding: 8px 4% 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff00;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+.header.change-color {
+  background-color: #d0eff1d4; /* スクロールしたあとのヘッダー背景色 */
+  transition: 0.3s;
+}
+nav {
+  margin: 0 0 0 auto;
+}
+nav li {
+  display: inline;
+  margin: 0 37px;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 11px #446466d4;
+}
+  .drawer-hamburger{
+      display: none;
+      
+  }
+  .drawer--right .drawer-nav{
+      right: 0;
+  }
+  .drawer-nav{
+      position: relative;
+      z-index: 99;
+}
+  .drawer-nav .drawer-menu li{
+      display: inline-block;
+  }
+.logo img {
+    width: 40%;
+    padding: 6px;
+}
+main{
+  background-color: white;
+}
+.keyvis img {
+  /* height: 660px; */
+  width: 100%;
+  object-fit: cover;
+}
+.pc { display: block !important; }
+.sp { display: none !important; }
+
+/* Profile */
+.profile {
+  width: 100%;
+  background-color: #d0eff1;
+  position: relative;
+  color: #002b57;
+  padding-bottom: 30px;
+}
+.profile_contena {
+  display: flex;
+  width: 100%;
+  margin: 20px;
+  padding-bottom: 90px;
+}
+.profile h3 {
+  font-size: 50px;
+}
+.profile_left {
+  width: 50vw;
+  z-index: 2;
+}
+.profile_left img {
+  width: 100%;
+}
+.profile_btn_contena {
+  display: flex;
+  width: 100%;
+}
+.profile_btn_contena img {
+  z-index: 99;
+  margin-top: 15px;
+}
+.profile_right {
+  width: 50vw;
+  position: relative;
+}
+.profile_right img {
+  width: 40%;
+  border-radius: 40% 0%;
+  margin-left: 15px;
+}
+.picture {
+  width: 100%;
+}
+.profile_text {
+  text-align: right;
+  margin-top: 60px;
+  margin-right: 15px;
+}
+.name {
+  font-size: 2rem;
+text-align: right;
+margin-right: 15px;
+margin-top: 38px;
+}
+.inner {
+  width: 100%;
+}
+.inner img {
+  width: 11%;
+}
+.insta   {
+  text-align: right;
+  margin-left: 15px;
+  width: 100%;
+}
+.insta img {
+  width: 13%;
+}
+h2 {
+  color: #002b57;
+  font-size: 3rem;
+  border-bottom: 4px dotted #000;
+  width: 15rem;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+}
+h3 {
+  color: #002b57;
+}
+.sub_title {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  margin: 25px;
+}
+.sub_title2 {
+  display: flex;
+  justify-content: center;
+}
+.grid img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius:50%
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  width: 85vw;
+  margin:0 auto;
+}
+
+
+.Gallery {
+  width: 100%;
+  margin-bottom: 50px;
+}
+form {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.namae_email {
+  display: flex;
+  justify-content: center;
+}
+.mailfoam input {
+  height: 50px;
+  width: 100%;
+}
+.mailfoam input, .mailfoam textarea {
+  border: 1px solid #002b572e;
+  margin: 10px;
+  padding-left: 15px;
+  width: 30%;
+}
+.mailfoam textarea {
+  width: 60%;
+}
+footer {
+  background-color: #d0eff1;
+  text-align: center;
+  padding-bottom: 20px;
+}
+#sosin_btn {
+  border: 0;
+  width: 90px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50px;
+  background: #d0eff1;
+  box-shadow:  6px 6px 12px #a0c1c4,
+              -6px -6px 12px #efffff;
+}
+.mail_result {
+  padding: 50px 150px;
+}
+.mail_coment {
+  text-align: center;
+  padding: 0 50px 50px;
+}
+.mail_desc {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 0 50px;
+  border-radius: 10px;
+}
+.item {
+  margin: 0 auto;
+}
+.Contact {
+  background-color: #d0eff1;
+}
+
+/* ここからモバイル対応 */
+/* ------------------------------------------------- */
+/* pc */
+@media screen and (min-width: 961px) {
+  /*ここにpc用スタイルを記述*/
+}
+
+/* tablet  */
+@media only screen and (min-width: 641px) and (max-width: 960px) {
+/*ここにtablet用スタイルを記述*/
+  /* Profile */
+  /* .profile {
+    height: 637px;
+  } */
+  .profile_contena {
+    margin-left: 0px;
+    padding-bottom: 0px;
+  }
+  /* .profile p {
+    font-size: 20px;
+  } */
+  .profile_text {
+    margin: 12px 0 0 57px;
+  }
+  .profile_left img {
+    width: 90%;
+  }
+  .profile_btn_contena {
+    width: 100%;
+  }
+  /* ボタンのサイズが伸縮すると、profileの高さが可変するので、固定値でprofileに設定した高さとずれがでて、隙間ができる。要対応。 */
+  .profile_left .profile_btn_contena img {
+    margin: 10px;
+  }
+  .profile_left .profile_btn {
+    padding: 16px;
+  }
+  .profile_btn_contena img {
+    width: 30%;
+    z-index: 99;
+  }
+  .inner img{
+    width: 60%;
+  }
+  .name {
+    margin-right: 7px;
+    margin-top: 25px;
+  }
+.picture {
+  text-align: center;
+}
+.profile_right img {
+  width: 60%;
+}
+  /* Gallery */
+  .Gallery {
+    margin: 0 auto;
+  }
+  .grid{
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0;
+    margin-top: 6%;
+    margin-bottom: 50px;
+    justify-content: center;
+    width: 482px;
+  }
+
+  /* Contact */
+  .mail_result {
+    padding: 50px 0;
+  }
+  .mail_coment {
+    text-align: center;
+    padding: 0 0 50px;
+  }
+  .mail_desc {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 0;
+    border-radius: 10px;
+  }
+}
+
+/* smartPhone */
+@media screen and (max-width: 640px) {
+/*ここにスマホ用スタイルを記述*/
+  /* header */
+  .pc { display: none !important; }
+  .sp { display: block !important; }
+  
+  .logo img {
+    width: 100px;
+  }
+.name {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+  /* Profile */
+  .profile {
+    height: 588px;
+  }
+  .profile_contena {
+    margin: 0 20px;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .profile h3 {
+    font-size: 30px;
+  }
+  .profile_text {
+    width: 100%;
+    margin: 0;
+    margin-top: 25px;
+  }
+  .profile_text p {
+    margin: 5px;
+  }
+  .profile_btn_contena {
+    width: 100%;
+    justify-content: center;
+  }
+  .profile_left {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  .profile p {
+    text-align: center;
+  }
+  .profile_left img {
+    margin: 20px 10px 10px 29px;
+    width: 100%;
+  }
+  .profile_left .profile_btn_contena img {
+    width: 45px;
+    padding: 0;
+  }
+  .profile_right {
+    width: 100%;
+  }
+ .picture{
+    width: 100%;
+    text-align: center;
+  }
+  .inner {
+    width: 0%;
+}
+.insta {
+  text-align: center;
+  margin-left: 0px;
+}
+  /* Gallery */
+  header {
+    padding: 8px 4% 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff0;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+  }
+  .Gallery {
+    margin: 0 auto;
+  }
+  .grid{
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0;
+    margin-top: 6%;
+    margin-bottom: 50px;
+    justify-content: center;
+    width: 300px;
+  }
+  .grid img {
+    width: 150px;
+    height: 150px;
+  }
+  .banner_contena {
+    display: block;
+    text-align: center;
+  }
+  /* Contact */
+  .sub_title2 {
+    height: 2em;
+  }
+  .sub_title2 img {
+    height: 100%;
+  }
+  .mail_result {
+    padding: 50px 0;
+  }
+  .mail_coment {
+    text-align: center;
+    padding: 0 0 50px;
+  }
+  .mail_desc {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 0;
+    border-radius: 10px;
+  }
+  .header.change-color {
+    background-color: #e5f4fff0; /* スクロールしたあとのヘッダー背景色 */
+    transition: 0.3s;
+  }
+}
